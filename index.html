@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Emoji Tetris</title>
+  </head>
+  <body>
+    <main>
+      <div class="grid-container" id="gridContainer"></div>
+      <div class="buttons">
+        <div class="buttons-container top">
+          <button class="emoji-button" id="down"></button>
+          <button class="emoji-button" id="left"></button>
+          <button class="emoji-button" id="right"></button>
+          <button class="emoji-button" id="rotate"></button>
+        </div>
+        <div class="buttons-container bottom">
+          <button class="emoji-button" id="play"></button>
+          <div class="score"><p id="score">00000</p></div>
+          <button class="emoji-button" id="restart"></button>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>

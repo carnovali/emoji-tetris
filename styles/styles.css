@@ -1,0 +1,114 @@
+.dev {
+  display: none;
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*  */
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(32, 32, 34);
+}
+
+main {
+  height: 100%;
+  width: 50%;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(37, 37, 56);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1px;
+  max-width: fit-content;
+}
+
+.grid-item {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.buttons {
+  width: 310px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px;
+}
+
+.emoji-button::before {
+  font-size: 44px;
+}
+
+.emoji-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.score {
+  padding: 5px 10px;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.247);
+}
+
+.score p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 38px;
+  font-family: monospace;
+}
+
+#left::before {
+    content: "◀️";
+}
+
+#right::before {
+    content: "▶️";
+}
+
+#down::before {
+    content: "🔽";
+}
+
+#rotate::before {
+    content: "↩️";
+}
+
+#play::before {
+  content: "⏯️";
+  font-size: 54px;
+}
+
+#restart::before {
+  content: "🔄";
+  font-size: 54px;
+}
+
+
